@@ -12,6 +12,9 @@ plugins=(git)
 autoload -Uz compinit; compinit
 setopt COMPLETE_ALIASES
 
+# gnupg
+gpg-connect-agent updatestartuptty /bye >/dev/null
+
 # sources
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zaliases
