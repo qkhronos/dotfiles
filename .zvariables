@@ -19,10 +19,6 @@ export GRADLE_HOME="$HOME/.local/share/gradle"
 export JAR="$JDTLS_HOME/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar"
 export WORKSPACE="$HOME/.workspace"
 
-if [ -f "$(which nvim)" ]; then
-	export EDITOR="nvim"
-fi
-
 if [ -d "$HOME/.local/bin" ]; then
 	export PATH="$PATH:$HOME/.local/bin"
 fi
@@ -33,4 +29,8 @@ fi
 
 if [ -d $GRADLE_HOME/bin ]; then
 	export PATH="$PATH:$GRADLE_HOME/bin"
+fi
+
+if [ -f "$(which nvim)" ]; then
+	export EDITOR="nvim"
 fi
