@@ -1,0 +1,10 @@
+[user]
+	name = Jaredy Capistrano Alves
+	email = qkhronos@pm.me
+	signingkey = FDDA3261C9165EFE
+[init]
+	defaultBranch = main
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg2
