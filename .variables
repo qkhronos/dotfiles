@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# zsh
+export ZSH="$HOME/.config/oh-my-zsh"
+
+# gnupg
+export GPG_TTY="$(tty)"
+
+# java
+export JAVA_HOME="$HOME/.local/share/jdks/11"
+export JDK_HOME="$JAVA_HOME"
+export JRE_HOME="$JAVA_HOME/jre"
+export CLASSPATH="$JAVA_HOME/lib:$JAVA_HOME/jre/lib"
+
+# nvim-lspconfig
+export JDTLS_HOME="$HOME/.local/share/jdtls"
+export JDTLS_CONFIG="$JDTLS_HOME/config_linux"
+export GRADLE_HOME="$HOME/.local/share/gradle"
+export JAR="$JDTLS_HOME/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar"
+export WORKSPACE="$HOME/.workspace"
+
+if [ -f "$(which nvim)" ]; then
+	export EDITOR="nvim"
+fi
+
+if [ -d "$HOME/.local/bin" ]; then
+	export PATH="$PATH:$HOME/.local/bin"
+fi
+
+if [ -d "$JAVA_HOME/bin" ]; then
+	export PATH="$PATH:$JAVA_HOME/bin"
+fi
+
+if [ -d $GRADLE_HOME/bin ]; then
+	export PATH="$PATH:$GRADLE_HOME/bin"
+fi

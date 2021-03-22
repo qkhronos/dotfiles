@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# dotfiles
+alias dotf="git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
+alias dotfa="dotf add"
+alias dotfc="dotf commit -S"
+alias dotfl="dotf log --all --oneline --decorate --graph"
+alias dotfs="dotf status -uno"
