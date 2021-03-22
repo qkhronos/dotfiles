@@ -8,11 +8,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # plugins
 plugins=(git)
 
-# sources
-source $HOME/.variables
-source $HOME/.aliases
-source $ZSH/oh-my-zsh.sh
-
 # others
 autoload -Uz compinit; compinit
 setopt COMPLETE_ALIASES
+
+# sources
+source $ZSH/oh-my-zsh.sh
+source $HOME/.zaliases
