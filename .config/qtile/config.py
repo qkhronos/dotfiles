@@ -57,6 +57,7 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod], "p", lazy.spawn('passmenu -fn "JetBrains Mono"'), desc="Launch passmenu"),
 ]
 
 groups = [Group(i) for i in "123456789"]
