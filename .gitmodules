@@ -1,3 +1,6 @@
 [submodule ".config/oh-my-zsh"]
 	path = .config/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule ".local/share/nvim/site/pack/packer/start/packer.nvim"]
+	path = .local/share/nvim/site/pack/packer/start/packer.nvim
+	url = https://github.com/wbthomason/packer.nvim.git
