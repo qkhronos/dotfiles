@@ -1,4 +1,4 @@
-# Oh My Zsh
+## Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
@@ -8,5 +8,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User
+## User
+
+# GnuPG
+gpg-connect-agent updatestartuptty /bye >/dev/null
+
+# Aliases
 alias dotf="git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
