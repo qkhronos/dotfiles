@@ -18,10 +18,3 @@ export PATH="$PATH:$JAVA_HOME/bin"
 # Gradle
 export GRADLE_HOME="$HOME/.local/share/gradle"
 export PATH="$PATH:$GRADLE_HOME/bin"
-
-# JDT Language Server
-export JDTLS_HOME="$HOME/.local/share/jdtls"
-export JDTLS_CONFIG="$JDTLS_HOME/config_linux"
-export WORKSPACE="$JDTLS_HOME/workspace"
-export JAR="$JDTLS_HOME/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar"
-
