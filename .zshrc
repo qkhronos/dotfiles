@@ -15,6 +15,9 @@ source $ZSH/oh-my-zsh.sh
 
 ## User
 
+# Systemd
+systemctl --user import-environment PATH
+
 # AWS
 autoload bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
