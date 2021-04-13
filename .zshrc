@@ -2,7 +2,11 @@
 
 export ZSH="$HOME/.config/oh-my-zsh"
 
-ZSH_THEME="agnoster"
+if [[ -n $SSH_CONNECTION ]]; then
+  ZSH_THEME="robbyrussell"
+else
+  ZSH_THEME="agnoster"
+fi
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git)
