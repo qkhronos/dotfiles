@@ -31,6 +31,8 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+from qtile_protonvpn import ProtonVpnStatus
+
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -107,6 +109,9 @@ screens = [
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Chord(chords_colors={ 'launch': ("#ff0000", "#ffffff") }, name_transform=lambda name: name.upper()),
+                widget.Sep(),
+                ProtonVpnStatus(),
+                widget.Sep(),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M:%S %p'),
             ],
