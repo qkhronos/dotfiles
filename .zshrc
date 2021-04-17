@@ -17,6 +17,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Systemd
 systemctl --user import-environment PATH
+systemctl --user import-environment JAVA_HOME
+systemctl --user import-environment GRADLE_HOME
+systemctl --user import-environment SSH_AUTH_SOCK
 
 # AWS
 autoload bashcompinit && bashcompinit
