@@ -19,8 +19,4 @@ source $ZSH/oh-my-zsh.sh
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Aliases
-alias dotf="git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
-alias dotfl="dotf log --oneline --decorate --graph --all"
-alias dotfpl="dotf pull --rebase origin"
-alias dotfps="dotf push -u origin"
-alias dotfs="dotf status -uno"
+source $HOME/.zsh_aliases

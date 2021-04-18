@@ -1,0 +1,17 @@
+# Dotfiles
+alias dotf="git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
+alias dotfa="dotf add"
+alias dotfc="dotf commit"
+alias dotfl="dotf log --all --decorate --graph --oneline"
+alias dotfpl="dotf pull --rebase origin"
+alias dotfps="dotf push -u origin"
+alias dotfs="dotf status -uno"
+
+# Git
+alias gita="git add"
+alias gitaa="git add --all"
+alias gitc="git commit"
+alias gitl="git log --all --decorate --graph --oneline"
+alias gitpl="git pull --rebase origin"
+alias gitps="git push -u origin"
+alias gits="git status"
