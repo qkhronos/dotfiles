@@ -15,16 +15,6 @@ source $ZSH/oh-my-zsh.sh
 
 ## User
 
-# Systemd
-systemctl --user import-environment PATH
-systemctl --user import-environment JAVA_HOME
-systemctl --user import-environment GRADLE_HOME
-systemctl --user import-environment SSH_AUTH_SOCK
-
-# AWS
-autoload bashcompinit && bashcompinit
-complete -C '/usr/local/bin/aws_completer' aws
-
 # GnuPG
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
