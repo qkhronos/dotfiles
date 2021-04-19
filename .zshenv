@@ -2,6 +2,7 @@
 export PATH="$PATH:$HOME/.local/bin"
 export EDITOR="nvim"
 export TERM="xterm-256color"
+export SVDIR="$HOME/service"
 
 # GnuPG
 export GPG_TTY="$(tty)"
