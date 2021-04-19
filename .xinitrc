@@ -8,7 +8,7 @@ numlockx on &
 test -f "$HOME/.fehbg" && exec "$HOME/.fehbg" &
 test -f "/usr/bin/protonvpn" && sudo protonvpn connect --p2p &
 test -f "/usr/bin/pipewire" && pipewire &
-test -f "/usr/bin/pipewire-pilse" && pipewire-pulse &
+test -f "/usr/bin/pipewire-pulse" && pipewire-pulse &
 
 # window manager
 qtile start
