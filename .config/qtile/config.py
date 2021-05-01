@@ -36,6 +36,13 @@ from qtile_protonvpn import ProtonVpnStatus
 mod = "mod4"
 terminal = guess_terminal()
 
+colors = [
+    "#291f1e",
+    "#f64740",
+    "#0081a7",
+    "#00afb9",
+]
+ 
 keys = [
     Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
@@ -78,8 +85,15 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
     ])
 
+
 layouts = [
-    layout.Columns(border_focus_stack='#d75f5f'),
+    layout.Columns(
+        border_focus = colors[1],
+        border_normal = colors[2],
+        border_on_single = True,
+        fair = True,
+        margin = 4,
+    ),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -105,17 +119,22 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.CurrentLayout(),
-                widget.GroupBox(),
+                widget.GroupBox(
+                    borderwidth = 2,
+                    disable_drag = True,
+                    this_current_screen_border = colors[1],
+                ),
                 widget.Prompt(),
                 widget.WindowName(),
-                widget.Chord(chords_colors={ 'launch': ("#ff0000", "#ffffff") }, name_transform=lambda name: name.upper()),
                 widget.Sep(),
                 ProtonVpnStatus(),
                 widget.Sep(),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M:%S %p'),
             ],
-            24,
+            30,
+            background = colors[0],
+            opacity = 0.8,
         ),
     ),
 ]
