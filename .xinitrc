@@ -13,4 +13,4 @@ test -f "/usr/bin/pipewire-media-session" && pipewire-media-session &
 test -f "/usr/bin/picom" && picom &
 
 # window manager
-qtile start
+exec dbus-launch --exit-with-session qtile start
