@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # keyboard
 setxkbmap br abnt2 &
@@ -15,7 +15,7 @@ test -f "/usr/bin/protonvpn" && sudo protonvpn connect --p2p &
 # autostart applications
 test -f "/usr/bin/firefox" && firefox &
 test -f "/usr/bin/pavucontrol" && pavucontrol &
-test -f "which jetbrains-toolbox" && jetbrains-toolbox &
+test -f "`which jetbrains-toolbox`" && jetbrains-toolbox &
 
 # window manager
 exec dbus-launch --exit-with-session qtile start
