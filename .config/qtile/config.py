@@ -49,19 +49,30 @@ keys = [
 ]
 
 groups = [
-    Group("WWW", matches=[
+    Group("www", matches=[
         Match(wm_class="Firefox"),
     ]),
-    Group("TERM", matches=[
+    Group("term", matches=[
         Match(wm_class="kitty"),
     ]),
-    Group("3"),
+    Group("dev", matches=[
+        Match(wm_class="jetbrains-clion"),
+        Match(wm_class="jetbrains-idea"),
+        Match(wm_class="jetbrains-pycharm"),
+        Match(wm_class="jetbrains-webstorm"),
+    ]),
     Group("4"),
     Group("5"),
     Group("6"),
-    Group("7"),
-    Group("8"),
-    Group("9"),
+    Group("media", matches=[
+        Match(wm_class="mpv"),
+    ]),
+    Group("etc", matches=[
+        Match(wm_class="jetbrains-toolbox"),
+    ]),
+    Group("sys", matches=[
+        Match(wm_class="Pavucontrol"),
+    ]),
 ]
 
 for i in groups:
@@ -96,6 +107,7 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.CurrentLayout(),
+                widget.Sep(),
                 widget.GroupBox(
                     active=colors[8],
                     borderwidth=2,
@@ -108,6 +120,7 @@ screens = [
                     urgent_alert_method='border',
                     urgent_border=colors[3],
                 ),
+                widget.Sep(),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Sep(),
