@@ -48,13 +48,27 @@ keys = [
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 ]
 
-groups = [Group(i) for i in "123456789"]
+groups = [
+    Group("WWW", matches=[
+        Match(wm_class="Firefox"),
+    ]),
+    Group("TERM", matches=[
+        Match(wm_class="kitty"),
+    ]),
+    Group("3"),
+    Group("4"),
+    Group("5"),
+    Group("6"),
+    Group("7"),
+    Group("8"),
+    Group("9"),
+]
 
 for i in groups:
+    key = str(groups.index(i) + 1)
     keys.extend([
-        Key([mod], i.name, lazy.group[i.name].toscreen(), desc="Switch to group {}".format(i.name)),
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
+        Key([mod], key, lazy.group[i.name].toscreen(), desc=f"Switch to group {i.name}"),
+        Key([mod, "shift"], key, lazy.window.togroup(i.name, switch_group=True), desc=f"Switch to & move focused window to group {i.name}"),
     ])
 
 layouts = [
