@@ -56,6 +56,8 @@ groups = [
         Match(wm_class="kitty"),
     ]),
     Group("dev", matches=[
+        Match(wm_class="Code - OSS"),
+        Match(wm_class="Code"),
         Match(wm_class="jetbrains-clion"),
         Match(wm_class="jetbrains-idea"),
         Match(wm_class="jetbrains-pycharm"),
