@@ -6,7 +6,6 @@ numlockx on &
 
 # autostart services
 test -f "$HOME/.fehbg" && exec "$HOME/.fehbg" &
-test -f "`which pcmanfm`" && pcmanfm --daemon-mode &
 test -f "`which picom`" && picom &
 test -f "`which pipewire-media-session`" && pipewire-media-session &
 test -f "`which pipewire-pulse`" && pipewire-pulse &
