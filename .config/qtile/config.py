@@ -49,13 +49,13 @@ keys = [
 ]
 
 groups = [
-    Group("www", matches=[
+    Group("", matches=[
         Match(wm_class="Firefox"),
     ]),
-    Group("term", matches=[
+    Group("", matches=[
         Match(wm_class="kitty"),
     ]),
-    Group("dev", matches=[
+    Group("", matches=[
         Match(wm_class="Code - OSS"),
         Match(wm_class="Code"),
         Match(wm_class="jetbrains-clion"),
@@ -63,18 +63,23 @@ groups = [
         Match(wm_class="jetbrains-pycharm"),
         Match(wm_class="jetbrains-webstorm"),
     ]),
-    Group("4"),
-    Group("5"),
-    Group("6"),
-    Group("media", matches=[
+    Group("", matches=[
+        Match(wm_class="Pcmanfm"),
+        Match(wm_class="Thunar"),
+    ]),
+    Group("", matches=[
         Match(wm_class="mpv"),
     ]),
-    Group("etc", matches=[
+    Group("", matches=[
+        Match(wm_class="Microsoft Teams"),
+        Match(wm_class="Microsoft Teams - Preview"),
+    ]),
+    Group("", matches=[
+        Match(wm_class="Pavucontrol"),
         Match(wm_class="jetbrains-toolbox"),
     ]),
-    Group("sys", matches=[
-        Match(wm_class="Pavucontrol"),
-    ]),
+    Group(""),
+    Group(""),
 ]
 
 for i in groups:
@@ -114,6 +119,7 @@ screens = [
                     active=colors[8],
                     borderwidth=2,
                     disable_drag=True,
+                    font='Font Awesome 5 Free',
                     foreground=colors[8],
                     highlight_method='border',
                     inactive=colors[3],
