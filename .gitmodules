@@ -7,3 +7,6 @@
 [submodule ".local/src/themes/dracula/kitty"]
 	path = .local/src/themes/dracula/kitty
 	url = https://github.com/dracula/kitty.git
+[submodule ".local/share/themes/dracula"]
+	path = .local/share/themes/dracula
+	url = https://github.com/dracula/gtk.git
