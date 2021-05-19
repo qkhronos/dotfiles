@@ -1,3 +1,9 @@
 [submodule ".config/oh-my-zsh"]
 	path = .config/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule ".local/src/themes/dracula/tty"]
+	path = .local/src/themes/dracula/tty
+	url = https://github.com/dracula/tty.git
+[submodule ".local/src/themes/dracula/kitty"]
+	path = .local/src/themes/dracula/kitty
+	url = https://github.com/dracula/kitty.git

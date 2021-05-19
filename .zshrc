@@ -20,3 +20,6 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Aliases
 source $HOME/.zsh_aliases
+
+# Colorscheme
+source $HOME/.local/src/themes/dracula/tty/dracula-tty.sh
