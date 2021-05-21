@@ -68,6 +68,8 @@ groups = [
         Match(wm_class="Thunar"),
     ]),
     Group("", matches=[
+        Match(wm_class="Gimp"),
+        Match(wm_class="Inkscape"),
         Match(wm_class="mpv"),
     ]),
     Group("", matches=[
