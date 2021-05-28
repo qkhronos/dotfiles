@@ -77,6 +77,7 @@ groups = [
         Match(wm_class="Microsoft Teams - Preview"),
     ]),
     Group("", matches=[
+        Match(wm_class="1Password"),
         Match(wm_class="Pavucontrol"),
         Match(wm_class="jetbrains-toolbox"),
     ]),
