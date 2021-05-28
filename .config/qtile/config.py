@@ -51,6 +51,7 @@ keys = [
 groups = [
     Group("", matches=[
         Match(wm_class="Firefox"),
+        Match(wm_class="Chromium"),
     ]),
     Group("", matches=[
         Match(wm_class="kitty"),
